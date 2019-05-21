@@ -12,7 +12,8 @@ def rec(base, height):
     return area
 
 def area(xlist, ylist, wheight):
-    area = 0
+
+    area1 = 0
     min_val = min(ylist)
     max_val = max(ylist)
     for i in range(len(xlist) - 1):
@@ -24,8 +25,8 @@ def area(xlist, ylist, wheight):
         else:
             to_go = max_val - ylist[i]
         chunk2 = rec(xdiff, to_go)
-        area += (chunk1 + chunk2)
-    return area
+        area1 += (chunk1 + chunk2)
+    return area1
 
 def wperim(xlist, ylist, wheight):
     perimeter = 0
