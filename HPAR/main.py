@@ -1,5 +1,4 @@
-
-import HPAR as h
+from HPAR import HPAR as h
 from PyQt5 import QtWidgets, uic
 
 ####### Window Setup #######
