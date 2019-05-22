@@ -2,7 +2,6 @@ import math
 import numpy
 
 
-
 class Trapezoid:
 
     data_points = {
