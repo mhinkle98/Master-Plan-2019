@@ -1,4 +1,6 @@
 import math
+import numpy
+
 
 
 class Trapezoid:
@@ -63,7 +65,12 @@ sampleData = {
 
 trap1 = Trapezoid(sampleData)
 print(trap1)
-print(trap1.wet_area(8))
-print(trap1.wet_perimeter(1))
+
+heights = numpy.arange(1, 10.1, 0.1)
+
+for height in heights:
+    print(trap1.wet_area(height))
+
+
 
 
