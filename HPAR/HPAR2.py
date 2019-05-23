@@ -11,15 +11,37 @@ class Trapezoid:
         30: 10
     }
 
-    def __init__(self, data_point_dict):
-        """Enter in a set of graphical points in dictionary format, with x's being
-        the keys and y's being the values"""
-        self.data_points = data_point_dict
-        self.x_values = list(self.data_points.keys())
-        self.y_values = list(self.data_points.values())
-        self.h_min = min(self.y_values)
-        self.left_angle = math.atan((abs(self.y_values[1] - self.y_values[0])) / (abs(self.x_values[1] - self.x_values[0])))
-        self.right_angle = math.atan((abs(self.y_values[1] - self.y_values[0])) / (abs(self.x_values[1] - self.x_values[0])))
+    def __init__(self, data_point_dict=None, data_point_text=None, fortran_data=None):
+        """Infers type of input. Either external text file or pre-defined dictionary, for now."""
+        if data_point_dict is not None:
+            self.data_points = data_point_dict
+            self.x_values = list(self.data_points.keys())
+            self.y_values = list(self.data_points.values())
+            self.h_min = min(self.y_values)
+            self.left_angle = math.atan(
+                (abs(self.y_values[1] - self.y_values[0])) / (abs(self.x_values[1] - self.x_values[0])))
+            self.right_angle = math.atan(
+                (abs(self.y_values[1] - self.y_values[0])) / (abs(self.x_values[1] - self.x_values[0])))
+
+        elif data_point_text is not None:
+            with open(data_point_text) as f:
+                temp = [int(x) for x in next(f).split()]
+            xs = []; ys = []
+            for i in range(len(temp)):
+                if i // 2 == 0:
+                    xs.append(temp[i])
+                else:
+                    ys.append(temp[i])
+            self.x_values = xs
+            self.y_values = ys
+            self.h_min = min(self.y_values)
+            self.left_angle = math.atan(
+                (abs(self.y_values[1] - self.y_values[0])) / (abs(self.x_values[1] - self.x_values[0])))
+            self.right_angle = math.atan(
+                (abs(self.y_values[1] - self.y_values[0])) / (abs(self.x_values[1] - self.x_values[0])))
+
+        elif fortran_data is not None:
+            """ TODO: Add implementation for fortran files """
 
     def wet_area(self, h_water):
         """All trapezoids should have 4 x/y data pairs"""
@@ -64,6 +86,7 @@ sampleData = {
 
 trap1 = Trapezoid(sampleData)
 print(trap1)
+trap2 = Trapezoid(None, "/Users/mhinkle98/Desktop/Code/Dr. Meselhe Work/Master-Plan-2019/HPAR/TestNumbers.txt")
 
 heights = numpy.arange(1, 10.1, 0.1)
 
@@ -71,5 +94,6 @@ for height in heights:
     print(trap1.wet_area(height))
 
 
-
+for height in heights:
+    print(trap2.wet_area(height))
 

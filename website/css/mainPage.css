@@ -1,0 +1,66 @@
+/* --------- Defaults --------- */
+
+nav,
+header,
+footer {
+    display: block;
+}
+
+body {
+    /*background-image: url("../Images/ehab1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: #F8FBF6;
+}
+
+/* ---------- Nav Bar ---------- */
+
+nav {
+    width: 100%;
+    margin: 0;
+}
+
+nav ul {
+    color: gray;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+ul.topnav li {
+    list-style: none;
+    float: right;
+}
+
+ul.topnav li a {
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    min-height: 20px;
+    text-align: center;
+    padding: 14px;
+    color: grey;
+    font-family: 'Signika', sans-serif;
+}
+
+ul.topnav li a:hover {
+    background-color: #141414;
+}
+
+/* -------- Youtube Section ------- */
+
+
+.pictureContatiner {
+    background-image: url("../Images/ehab1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: fill;
+}
+
+.youtubepart {
+    width: 100%;
+    margin: auto;
+    padding-top: 0%;
+    padding-bottom: 4%;
+    background-color: #141414;
+}
