@@ -2,31 +2,122 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=Kodchasan|Signika&display=swap"
-          rel="stylesheet">
-    <link rel = "stylesheet" href = "css/mainPage.css">
-    <title>Ehab Meselhe - Tulane University</title>
+    <meta name="viewport" content="width=device=width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+
+    <title>Ehab Meselhe - Home</title>
 </head>
+
 <body>
-<div class="pictureContatiner">
-    <nav>
-        <ul class = "topnav">
-            <li><a href = "group.html">Research Group</a></li>
-            <li><a href = "projects.html">Projects</a></li>
-            <li><a href = "about.html">About</a></li>
-            <li><a href = "index.html">Home</a></li>
-        </ul>
-    </nav>
-    <br style="line-height: 400px;">
+<header>
+    <div class="dropdown-header">
+        <div class="text-center">This site is currently in beta.  Check back soon for updates!</div>
+    </div>
+</header>
+
+<header>
+    <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-md-7 py-4">
+                    <h4 class="text-white">About</h4>
+                    <p class="text-info">One of Louisiana’s leading experts on coastal systems, Ehab holds a PhD in engineering from the University of Iowa and has more than 20 years of experience researching coastal wetland hydrology, sediment transport and computer modeling of coastal wetland systems. See <a href="about.html">about</a> page for more information.</p>
+                </div>
+                <div class="col-sm-4 offset-md-1 py-4">
+                    <ul class="list-unstyled">
+                        <li><a href="group.html" class="text-white">Research</a></li>
+                        <li><a href="projects.html" class="text-white">Projects</a></li>
+                        <li><a href="publications.html" class="text-white">Publications</a></li>
+                        <li><a href="about.html" class="text-white">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark box-shadow">
+        <div class="container d-flex justify-content-between">
+            <a href="index.html" class="navbar-brand d-flex align-items-center">
+                <strong>Home</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+</header>
+<main role="main">
+    <section class="jumbotron text-right">
+        <div class="container">
+            <br class="...">
+            <br class="...">
+            <br class="...">
+            <br class="...">
+            <br class="...">
+            <h1 class="text-light">Ehab Meselhe</h1>
+            <br class="...">
+            <br class="...">
+            <br class="...">
+        </div>
+    </section>
+</main>
+
+<!-- News Reel -->
+<div style="text-align: center">
+    <br>
+<h1 class="newsH1">News</h1>
+    <br>
+    <hr>
+<div class="container-fluid">
+Test
 </div>
-<div class = "youtubepart" style="text-align: center">
-    <br style = "line-height: 5px;">
-    <iframe width="560" height="315"
-        src="https://www.youtube.com/embed/15db0yhQrAU"
-        frameborder="0" allow="accelerometer; autoplay;
+    <br><br>
+</div>
+
+<!-- Youtube Reel -->
+<div id = "carouselExampleIndicators" class = "carousel slide" data-ride = "carousel" style="text-align: center">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/15db0yhQrAU"
+                    frameborder="0" allow="accelerometer; autoplay;
         encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-    
+                    allowfullscreen></iframe>
+        </div>
+        <div class="carousel-item">
+            <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/TQDrA60eZ30"
+                    frameborder="0" allow="accelerometer; autoplay;
+                        encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+        </div>
+    </div>
+
 </div>
+
+<footer class="text-muted bg-dark">
+    <div class="container">
+        <p class="float-right">
+            <a href="#">Back to top</a>
+        </p>
+        <p><a href="index.html">Home</a> | <a href="https://tulane.edu">Tulane University</a> </p>
+        <p>Powered by <a href="https://wordpress.org">WordPress</a></p>
+    </div>
+</footer>
+
+
+<!-- Necessary Scripts: jQuery then Bootstrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="scripts/js/bootstrap.min.js"></script>
 </body>
 </html>

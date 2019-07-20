@@ -1,0 +1,68 @@
+:root {
+    --jumbotron-padding-y: 3rem;
+}
+
+.jumbotron {
+    padding-top: var(--jumbotron-padding-y);
+    padding-bottom: var(--jumbotron-padding-y);
+    margin-bottom: 0;
+    background-image: url(../images/ehab1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0;
+}
+@media (min-width: 768px) {
+    .jumbotron {
+        padding-top: calc(var(--jumbotron-padding-y) * 2);
+        padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+    }
+}
+
+.jumbotron-heading {
+    font-weight: 300;
+    border-radius: 0;
+}
+
+.jumbotron .container {
+    max-width: 0;
+    border-radius: 0;
+}
+.Projects {
+    padding-top: var(--jumbotron-padding-y);
+    padding-bottom: var(--jumbotron-padding-y);
+    margin-bottom: 0;
+    background-image: url(../images/bridges.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0;
+}
+
+.Group {
+    padding-top: var(--jumbotron-padding-y);
+    padding-bottom: var(--jumbotron-padding-y);
+    margin-bottom: 0;
+    background-image: url(../images/researchtest.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0;
+}
+
+footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+footer p {
+    margin-bottom: .25rem;
+}
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+h1.newsH1 {
+    color: #10707f;
+    font-size: 60px;
+}
+
+.bg-blue {
+    background-color: blue;
+}
